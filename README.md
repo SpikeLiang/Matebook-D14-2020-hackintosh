@@ -12,12 +12,13 @@
 ⭐️微信答疑一问50.   
 
 
-[中文🇨🇳](readme.md) | [English🇬🇧](readme-en.md)  
+姐妹项目:[MateBook 13/14 OpenCore 黑苹果](https://github.com/ske1996/matebook-13-2019-oc-efi)  
+
 
   
-EFI下载地址：[releases](https://github.com/ske1996/matebook-13-2019-oc-efi/releases)  
+EFI下载地址：[releases](https://github.com/ske1996/Matebook-D14-2020-hackintosh/releases)  
 
-如果你遇到了什么问题（与安装无关的），有可能在这里找到答案：[issues](https://github.com/ske1996/matebook-13-2019-oc-efi/issues)  
+如果你遇到了什么问题（与安装无关的），有可能在这里找到答案：[issues](https://github.com/ske1996/Matebook-D14-2020-hackintosh/issues)  
 
 请在这个网页的最右上角帮我点颗小星星⭐️哟  
 
