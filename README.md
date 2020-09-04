@@ -82,7 +82,7 @@ EFI下载地址：[releases](https://github.com/ske1996/matebook-13-2019-oc-efi/
 上传了根据OC官方版制成的efi  
   
   
-
+</details>   
 
 ## 正常可用的部件：
   
