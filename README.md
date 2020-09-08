@@ -108,7 +108,10 @@ EFI下载地址：[releases](https://github.com/ske1996/Matebook-D14-2020-hackin
 
 </details>   
 
-3.睡眠正常
+3.睡眠正常  
+
+4.触摸板可用  
+
 
 6.解锁cfg lock后可完美原生电源管理
 
@@ -129,8 +132,6 @@ EFI下载地址：[releases](https://github.com/ske1996/Matebook-D14-2020-hackin
 1.摄像头  
 
 2.独显  
-
-3.触控板  
 
 4.HDMI未测试  
 
