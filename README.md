@@ -79,6 +79,10 @@ EFI下载地址：[releases](https://github.com/ske1996/Matebook-D14-2020-hackin
   
 
 
+- 20200917:  
+使用了Z大的最新AirportItlwm的wifi驱动，跟heliport说拜拜啦，今后可以原生切换wifi了，另将oc升级至0.6.1  
+bigsur跟catalina需要对号入座，不可串着用  
+
 - 20200904:  
 上传了根据OC官方版制成的efi  
   
@@ -102,7 +106,7 @@ EFI下载地址：[releases](https://github.com/ske1996/Matebook-D14-2020-hackin
 <details>  
 <summary>2.wifi可用 *点击查看详细说明</summary>  
   
-1. 需要用propertree([点击下载](https://github.com/ske1996/matebook-13-2019-oc-efi/raw/master/ProperTree.zip)注入你自己的ssid跟password➡️[教程链接](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1848662)）  
+1. 使用了Z大的最新AirportItlwm的wifi驱动，跟heliport说拜拜啦.  
 
 2. 驱动作者[@zxystd](https://github.com/OpenIntelWireless/itlwm)  
 
