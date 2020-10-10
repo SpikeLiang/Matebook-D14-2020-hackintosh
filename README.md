@@ -77,7 +77,10 @@ EFI下载地址：[releases](https://github.com/ske1996/Matebook-D14-2020-hackin
 <details>  
 <summary>点击以查看详细信息</summary>  
   
-
+  
+- 20201011:  
+尝试修复了hdmi问题，目前hdmi可用，但是可能唤醒后会导致色彩失真的问题，可以尝试去偏好设置，显示器，色彩的位置做调整  
+另外感谢[@Shaopeng](https://github.com/gongshaopeng0828)帮忙测试  
 
 - 20200917:  
 使用了Z大的最新AirportItlwm的wifi驱动，跟heliport说拜拜啦，今后可以原生切换wifi了，另将oc升级至0.6.1  
@@ -116,7 +119,12 @@ bigsur跟catalina需要对号入座，不可串着用
 
 4.触摸板可用  
 
-5.HDMI可用  
+<details>  
+<summary>5.HDMI可用 </summary>  
+
+感谢[@Shaopeng](https://github.com/gongshaopeng0828)帮忙测试  
+
+</details> 
 
 6.解锁cfg lock后可完美原生电源管理
 
