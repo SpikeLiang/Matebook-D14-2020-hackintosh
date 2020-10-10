@@ -116,6 +116,7 @@ bigsur跟catalina需要对号入座，不可串着用
 
 4.触摸板可用  
 
+5.HDMI可用  
 
 6.解锁cfg lock后可完美原生电源管理
 
@@ -135,7 +136,6 @@ bigsur跟catalina需要对号入座，不可串着用
 
 2.独显  
 
-4.HDMI未测试  
 
 
 
