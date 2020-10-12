@@ -83,7 +83,7 @@ EFI下载地址：[releases](https://github.com/ske1996/Matebook-D14-2020-hackin
 - 20201012:    
 修复了唤醒后色彩失真的问题，本次缓冲帧部分来自于[@Shaopeng](https://github.com/gongshaopeng0828)  
 
-
+- 20201011:  
 尝试修复了hdmi问题，目前hdmi可用，但是可能唤醒后会导致色彩失真的问题，可以尝试去偏好设置，显示器，色彩的位置做调整  
 另外感谢[@Shaopeng](https://github.com/gongshaopeng0828)帮忙测试  
 
