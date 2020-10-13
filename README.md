@@ -168,7 +168,15 @@ matebook D14 2020 i5-10210U
  ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 ⚠️d14很多是pm981的硬盘，建议换个硬盘，不然天天死机启动失败的够你受得，还有就是安装教程与普通的硬盘不一样  
 
-
+<details>  
+<summary>⚠️说明（一定先读这个）</summary>  
+1.以下教程仅针对安装Catalina，想安装bigsur的自行搜索oc的安装教程  
+  
+2.如果你在以下教程有遇到五国，或者是usb导致的卡eb，卡禁止符号  
+  方法1.用oc安装，直接在硬盘efi分区扩容后放进我oc的efi，然后用oc引导安装盘，具体教程自行百度  
+  方法2.删除u盘中的efi/clover/kexts/other/usbinjectall.kext以及efi/clover/kexts/other/usbport.kext  
+  
+</details>  
 
 <details>  
 <summary>点击查看镜像下载</summary>  
@@ -298,7 +306,55 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 ```  
 </details>   
   
+<details>  
+<summary>修改dvmt至64mb</summary>  
+    
+  ⚠️关于修改dvmt后能做到什么？  
+  可以hdmi/dp输出4k60p的信号了  
   
+  
+⚠️以下教程的cfg lock偏移地址提取自matebook d14 2020款  
+其他的需要自行提取bios并自行分析，核对偏移地址  
+如因以下教程修改导致的一切后果，本人不予承担责任，下载本repo中任何一个文件视为同意以上条款  
+
+- U盘准备阶段：  
+（大小无所谓）  
+
+1.先准备一个u盘，格式化为fat32  
+2.u盘里创建文件夹：EFI  
+3.打开EFI文件夹，在里面创建文件夹BOOT  
+4.复制[cfgunlock.zip(点击下载)](https://github.com/ske1996/matebook-13-2019-oc-efi/raw/master/cfgunlock.zip)里面的bootx64.efi进U盘的EFI/BOOT下  
+5.关机后开机按F12使用这个U盘去引导，然后进入修改bios底层阶段  
+
+- 以下为修改bios底层阶段：  
+1. 进入后 ‘alt’ + ’=‘ 切换进 ACPI Variable  
+2. 用pageup/pagedown/上下方向键找到 CPUSetup  
+3. 进入CPUSetup后，然后用crtl加pagedown翻到下一页找到左侧横坐标0100，如下图所示，注意左侧横坐标第一项就是0100  
+![image](http://m.qpic.cn/psc?/V51Uqo3Z3KmDDj0bhEZH0ySaLy25K537/ruAMsa53pVQWN7FLK88i5rx2t9cSeXQiYLuqJ05.4FSNLMnbEuWry.WaVUK8DLZK1Ex*4Q8psZMPKE3FXEd3kK9GM.4uvgaVsGsHP0v8onU!/b&bo=gALbAQAAAAABB3g!&rf=viewer_4)  
+4. 横坐标0100纵坐标07改成02，横坐标0100纵坐标08改成03（就是我圈出来的位置修改的跟上图一样就行了）  
+5. Crtl加w保存就行了  
+
+  
+  
+[本教程灵感来源@laozhiang](https://github.com/laozhiang)  
+  
+
+
+</details>   
+  
+<details>  
+<summary>解决window与macos时间不同步/显示不正确</summary>  
+  
+  
+  
+在windows下面WIN+x 选择管理员模式进入CMD  
+  
+  执行以下命令：  
+  
+```bash
+Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
+```  
+</details>   
 
 <details>  
 <summary>关于如何在黑苹果下玩游戏（打破平台/硬件限制，黑苹果也能玩所有PC游戏）</summary>  
