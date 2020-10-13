@@ -290,21 +290,6 @@ https://zhuanlan.zhihu.com/p/121655468
 
 </details> 
 
-      
-
-<details>  
-<summary>解决window与macos时间不同步/显示不正确</summary>  
-  
-  
-  
-在windows下面WIN+x 选择管理员模式进入CMD  
-  
-  执行以下命令：  
-  
-```bash
-Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsUniversal /t REG_DWORD /d 1
-```  
-</details>   
   
 <details>  
 <summary>修改dvmt至64mb</summary>  
